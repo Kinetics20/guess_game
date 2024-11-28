@@ -27,3 +27,29 @@ def get_user_range() -> tuple[int, int]:
 
 def draw_number(min_number: int, max_number: int) -> int:
     return random.randint(min_number, max_number)
+
+
+def guess_number(min_number: int, max_number: int, drawn_number: int) -> None:
+    print(f'Guess number from range: {min_number} to {max_number}. Good Luck!')
+
+    counter: int = 0
+
+    while True:
+        try:
+            user_digit: int = convert_user_input(input('Enter valid number: \n'))
+        except ValueError:
+            continue
+
+        counter += 1
+
+        if user_digit > drawn_number:
+            print(f'Too high')
+        elif user_digit < drawn_number:
+            print(f'Too low')
+        else:
+            print(f'You won! Your numbers of guesses: {counter}')
+            break
+
+
+
+
