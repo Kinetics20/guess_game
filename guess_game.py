@@ -51,5 +51,23 @@ def guess_number(min_number: int, max_number: int, drawn_number: int) -> None:
             break
 
 
+def main() -> None:
 
+    while True:
+        try:
+            min_number: int
+            max_number: int
+            min_number, max_number = get_user_range()
+        except ValueError:
+            continue
+
+        break
+
+    drawn_number = draw_number(min_number, max_number)
+    guess_number(min_number, max_number, drawn_number)
+    print('Game Over')
+
+
+if __name__ == '__main__':
+    main()
 
