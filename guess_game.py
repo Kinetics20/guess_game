@@ -1,3 +1,6 @@
+import random
+
+
 def convert_user_input(user_input: str) -> int:
     return int(user_input)
 
@@ -20,3 +23,7 @@ def get_user_range() -> tuple[int, int]:
         raise ValueError('Range min and max have to not be equal')
 
     return min_range, max_range
+
+
+def draw_number(min_number: int, max_number: int) -> int:
+    return random.randint(min_number, max_number)
