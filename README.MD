@@ -1,5 +1,4 @@
 # Guess Number Game
----
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python&logoColor=white)
 ![PyCharm](https://img.shields.io/badge/PyCharm-2025.1-blue?logo=jetbrains&logoColor=white)
